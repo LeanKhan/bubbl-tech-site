@@ -60,6 +60,16 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
+        <script>
+      switch(window.location.hash.substring(1)){
+          case 'challenge':
+          window.location = 'challenge.html';
+          break;
+        default:
+          break;
+      }
+    </script>
+    
     <!--   track pageviews with clicky   -->
     <script>
       var clicky_site_ids = clicky_site_ids || [];
@@ -69,6 +79,7 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    
   </head>
   <body>
     <div class="container" style="text-align:center">
@@ -99,16 +110,6 @@
       
           <footer class="footer">want to contact us? text <a href="">gbadebo</a></footer>
     </div>
-    
-    <script>
-      switch(window.location.hash.substring(1)){
-          case 'challenge':
-          window.location = 'challenge.html';
-          break;
-        default:
-          break;
-      }
-    </script>
     
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
