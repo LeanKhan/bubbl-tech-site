@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oya html | tech notes @ bubbl </title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  </head>
+
+  <body class="stackedit">
+    <div class="stackedit__html">
+      <p>
+        First version: Feb 26 2021<br />
+        Author: Emmanuel Segun-Lean
+        <a href="https://github.com/leankhan">@Leankhan</a>
+      </p>
+      <hr />
+      <h2 id="intro-to-html">Intro to HTML</h2>
+      <p>
+        This “tutorial” is hacky and incomplete. Please give corrections,
+        suggestions in the comments.
+      </p>
+      <h3 id="lets-talk-about-the-web">Let’s talk about the web</h3>
+      <p>
+        The web was created by Tim Bernes-Lee while working at CERN, the
+        research institute in Geneva Switzerland. He wanted a way to lnk the
+        many files on his collegues computers together. This action of linking
+        pages together is called “Hypertext” and the language used to describe
+        these pages is called <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. The web is a
+        collection of webpages.
+      </p>
+      <h3 id="lets-talk-about-browsers">Let’s talk about Browsers</h3>
+      <p>
+        Broswers are software used to view and explore webpages. You write HTML
+        to describe to your browser what your web page should look like, what it
+        should do and other details about your page. HTML files are saved with
+        the <code>.html</code> extension.
+      </p>
+      <h3 id="html-syntax">HTML Syntax</h3>
+      <p>
+        The Syntax of a language are the rules guide the forming of statements
+        in that language. In pidgin for example you don’t say
+        <code>dey I</code> when someone asks how you are. Instead you respond
+        with <code>I dey</code>. Same way HTML has rules that define how the
+        language is written. Every HTML code is made up of elements, these are
+        the building blocks of your webpage. You add elements to a page and can
+        add embed elements also. Elements are represented by tags:
+      </p>
+      <pre><code>&lt;element name&gt; content &lt;/element name&gt;
+</code></pre>
+      <p>
+        An opening and closing tag with content in the middle. If you want to
+        add a paragraph element, you put a paragraph tag like so:
+      </p>
+      <pre><code>&lt;p&gt;content&lt;/p&gt;
+</code></pre>
+      <p>
+        When the browser sees this tag, it will display a paragraph element with
+        that text. You don’t have to memorize these tags, it’s how you use them
+        that matter.
+      </p>
+      <h4 id="html-element-attributes">HTML Element Attributes</h4>
+      <p>
+        Most HTML elements have attributes you can use to change something about
+        that element. You add attributes to the first opening tag of the
+        element. Let’s say there was an element called “Student” (there is none
+        btw). Without attributes our student element is a generic fellow. But
+        when we add some attributes they get interesting!
+      </p>
+      <pre><code>&lt;student&gt; I am a student &lt;/student&gt;
+</code></pre>
+      <p>Meh, Generic Student element</p>
+      <pre><code> &lt;student name=”Emmanuel” level=”Senior” hotel=”Trivago”&gt; I am a student &lt;/student&gt;
+</code></pre>
+      <p>Whoa! This is an interesting fellow!</p>
+      <h3 id="html-webpage-structure">HTML Webpage structure</h3>
+      <p>
+        Not all HTML elements/tags are for displaying something. Some provide
+        information about the page and provide structure for other elements or
+        the entire page.<br />
+        This is the basic structure of a web page in HTML. You can see the
+        <code>&lt;html&gt;</code> tag? That’s the element telling the browser
+        that this is a HTML page. Then the <code>&lt;head&gt;</code> tags
+        provide more data about our page and the <code>&lt;body&gt;</code> tag
+        is where all our visual elements go.
+      </p>
+      <pre><code>&lt;html&gt;
+
+  &lt;head&gt; Nothing here will be displayed in the browser &lt;/head&gt;
+
+  &lt;body&gt; Everything here will be displayed in the browser &lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+      <h3 id="lets-make-our-first-web-page">Let’s make our first web page</h3>
+      <p>
+        To make a webpage we need to create a HTML file, for that we need a text
+        editor. One common one that comes with all Windows computers is Notepad.
+        On Mac, that will be TextEdit. Open your text editor and write out a
+        basci webpage using the structure I outlined above. Then add some
+        elements, like a Header tag
+        <code>&lt;h1&gt;Hello world!&lt;/h1&gt;</code>. You can find more about
+        HTML elements on
+        <a href="http://www.w3schools.com/html/html_elements.asp">W3Schools</a>.
+        Generally, W3Schhols is a great resource for learning HTML, CSS and
+        Javascript. Bookmark it ;)
+      </p>
+      <p>
+        Remember to place your visual elements (paragraphs, headers) inside the
+        <code>&lt;body&gt;&lt;/body&gt;</code> tag. And don’t forget to close
+        all your tags. When you are done, save your TXT file as a .html (or
+        .htm) file and open it with your browser. You should see your page!
+      </p>
+      <p>Notes:</p>
+      <ul>
+        <li>
+          <a href="http://www.w3schools.com/html/html_elements.asp"
+            >W3Schools</a
+          >
+          is mad essential
+        </li>
+        <li>This is for the first session of our MKR Challenge.</li>
+      </ul>
+    </div>
+    
+    <div class="commentbox">
+      
+    </div>
+    
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+    <script>
+//     5758854092554240-proj
+      commentBox('5758854092554240-proj');
+    </script>
+  </body>
+</html>
